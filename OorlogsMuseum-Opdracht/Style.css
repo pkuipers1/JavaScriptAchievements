@@ -1,0 +1,15 @@
+img{
+    max-width: 100%;
+}
+
+h1{
+    font-family: serif;
+    color: black;
+    background-color: azure;
+}
+
+body{
+    color: azure;
+    background-color: black;
+    font-family: sans-serif;
+}
