@@ -25,17 +25,20 @@
     }
      
     function makeThisSentence(){
-        let index = randomizer(arrayLength);
-        let woord1 = onderwerp[index];
-        let woord2 = werkwoord[index];
-        let woord3 = restwoord[index];
+        let indexOnderWerp = randomizer(arrayLengthOnderwerp);
+        let indexWerkwoord = randomizer(arrayLengthWerkwoord);
+        let indexRestwoord = randomizer(arrayLengthRestwoord);
+        
+        let woord1 = onderwerp[indexOnderWerp];
+        let woord2 = werkwoord[indexWerkwoord];
+        let woord3 = restwoord[indexRestwoord];
         let outputString = woord1 + " " + woord2 + " " + woord3;
         return outputString;
     }
     
     function selectThisImage(){
-        let index = randomizer(arrayLength);
-        myImage.src = plaatjes[index]; 
+        let indexPlaatjes = randomizer(arrayLengthPlaatjes);
+        myImage.src = plaatjes[indexPlaatjes]; 
     }
     
     function sayItLoud (textString) {
@@ -47,8 +50,11 @@
       window.speechSynthesis.speak(message);
     }
     
-    const onderwerp = ["My mom", "This program", "Star"];
-    const werkwoord = ["is", "wants", "has", "makes"];
-    const restwoord = ["food", "games", "a horse"];
+    const onderwerp = ["My mom", "This program", "Star", "This horse"];
+    const werkwoord = ["is", "wants", "has", "makes", "gets"];
+    const restwoord = ["food", "games", "a horse", "homework", "a car"];
     const plaatjes = ["img/horse.jpg", "img/snacks.jpg", "img/cube.png", "img/code.jpg"]
-    let arrayLength = onderwerp.length;
+    let arrayLengthOnderwerp = onderwerp.length;
+    let arrayLengthWerkwoord = werkwoord.length;
+    let arrayLengthRestwoord = restwoord.length;
+    let arrayLengthPlaatjes = plaatjes.length;
