@@ -37,7 +37,7 @@ function showDataColor(alpha, beta, gamma){
 function activateVoice(alpha, beta, gamma){
     // voice if Z-axis rotation > value
     if(alpha > 120){
-        let myTxt = "Rotate me why. Not do.";  
+        let myTxt = "Yo yo yo 148 3 to the 3 to the 6 to the 9 representing the ABQ what up biatch";  
         sayItLoud(myTxt); // text 2 speech
 
         // laat het ook in de HTML zien
@@ -52,7 +52,7 @@ function activateVoice(alpha, beta, gamma){
 function showMyImage(alpha, beta, gamma){
     // image if X-axis > value
     if(beta > 40){
-        document.getElementById('myImage').src = "logo.jpg"; // show image
+        document.getElementById('myImage').src = "Harrier.png"; // show image
         }
         else {
             document.getElementById('myImage').src = ""; // no image
